@@ -20,7 +20,7 @@ The contend of the ZIP-file can be uninstalled later, without touching the origi
   height="467"
   style="display: block; margin: 0 auto" />
 
-For backround-infos and customizing the installer see:
+For backround-infos and customizing the installer, see:
 
 ```
  "IDE\Contrib\zip2exe\Base.nsh"
