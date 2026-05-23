@@ -1,8 +1,10 @@
 # Portable NSIS IDE and Zip2EXE - A full-blown NSIS IDE with context-sensitive help based on Scitilla (SciTE)
 
-<div style="text-align: center">
-  <img width="882" height="648" alt="IDE" src="https://github.com/user-attachments/assets/5ee2b1be-3773-4f44-949e-0e1df933acd8" />
-</div>
+<img src="https://github.com/user-attachments/assets/5ee2b1be-3773-4f44-949e-0e1df933acd8"
+  alt="IDE"
+  width="882"
+  height="648"
+  style="display: block; margin: 0 auto" />
 
 ## NSIS zip2exe with uninstaller-support in order to quickly rollout config-packages (over software) that can be uninstalled.
 
@@ -12,6 +14,23 @@ For example, we're now able to rollout very quick an Autoconfig-Package over a T
 
 The contend of the ZIP-file can be uninstalled later, without touching the original package-files :-) ...
 
-<div style="text-align: center">
-  <img width="542" height="467" alt="NSIS-3.12 Zip2EXE Deutsch" src="https://github.com/user-attachments/assets/382a4c93-d587-4ace-bb05-f15859191de9" />
-</div>
+<img src="https://github.com/user-attachments/assets/382a4c93-d587-4ace-bb05-f15859191de9"
+  alt="IDE"
+  width="542"
+  height="467"
+  style="display: block; margin: 0 auto" />
+
+For infos on backround and customizing the installer see:
+
+```
+ "IDE\Contrib\zip2exe\Base.nsh"
+```
+
+and the text-block between:
+
+```
+; ###################################### My DEFINITIONS ### BEGIN ###
+...
+; ###################################### My DEFINITIONS ###  END  ###
+```
+Due to the installer-design, to install this stuff into an already installed target-path of another installer, the uninstaller WILL NOT REMOVE THE ROOT-PATH. If you want to do this, you may modify the NSIS-Base header-file: "IDE\Contrib\zip2exe\Base.nsh" above, but be aware that this behavior <b>is not the primary use-case for the application objective presented here</b>.
